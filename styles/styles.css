@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*thi line helps the page from breaking the layout */
+}
+
+body {
+    background-color: #FAF3E1;
+    /* this code will apply the page background color */
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #213C51;
+    /* This will help set the main text color*/
+}
+
+header {
+    background-color: #FAF3E1;
+    /* this color is the same color applied that I applied to the full page for smooth blend */
+    padding: 10px;
+    text-align: left;
+    /* This code will help keep the navigation bar text staying in the left */
+    border-bottom: 2px solid #213C51;
+    /* this code helps me divide the header from the main page with a line */
+    color: #213C51;
+}
+
+nav a {
+    color: #213C51;
+    /* this again is the color for the text on the navigation bar to blend with my page*/
+    padding: 10px;
+    display: inline-block;
+    /* This codes helps keeping the links on one line */
+    text-decoration: none;
+    /* this code removes the underline */
+}
+
+main {
+    max-width: 840px;
+    /* this code keeps the limits width of main content */
+    margin: 20px auto;
+    /* this code centers the main content on the page */
+    padding: 0 20px;
+    /* side padding only for nicer text edges */
+    /* I will need to add a background-color here if want to see the box again */
+}
+
+h1 {
+    color: #213C51;
+    /* this is the color for the text on the heading */
+    text-align: left;
+    margin-bottom: 15px;
+    /* this code will set the space under the heading */
+}
+
+main img {
+    width: 150px;
+    /* this helps set the profile image width */
+    height: auto;
+    /* by setting it to auto that helps to keep the proportions */
+    display: block;
+    /* and this will put the main image on its own line */
+    margin: 0 0 15px 0;
+    /* this helps me keep the image to the left */
+    border-radius: 10px;
+    /* this helps me round corners on the main image */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* this adds a soft shadow */
+}
+
+aside {
+    width: 20em;
+    /* This will help set the size of aside box */
+    margin: 1em auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* This adds a soft border */
+    padding: 1em;
+    /* This is the space inside my aside box */
+    background-color: #E8F4FA;
+    /* This color code is the background only for the aside */
+    color: #213C51;
+    text-align: center;
+    border-radius: 12px;
+    /* This code helps again to round the corners on the aside box */
+    float: left;
+    /* The float helps me move the aside to the left */
+}
+
+aside img {
+    width: 200px;
+    /* This is the requirement fo the size of aside image */
+    height: auto;
+    /* This keeps the proportions on the page */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* This helps add a soft shadow on the sides */
+    margin-bottom: 10px;
+}
+
+p {
+    padding: 0;
+    margin-bottom: 10px;
+    /* This helps to add a small space between paragraphs */
+}
+
+footer {
+    clear: both;
+    margin-top: 1em;
+    /* This helps with the space that is above the footer */
+    text-align: center;
+    background-color: #FAF3E1;
+    /* This is again the same color as body background to blend the footer */
+    color: #213C51;
+    padding: 10px;
+    /* This is the space inside footer */
+    font-size: .9rem;
+    border-top: 2px solid #213C51;
+    /* This helps me to see the top border of the footer for separation */
+
+}
