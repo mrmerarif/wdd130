@@ -25,11 +25,17 @@ header {
     color: #213C51;
 }
 
+nav {
+    background-color: #FAF3E1;
+    padding: 10px;
+
+}
+
 nav a {
     color: #213C51;
     /* this again is the color for the text on the navigation bar to blend with my page*/
     padding: 10px;
-    display: inline-block;
+    display: block;
     /* This codes helps keeping the links on one line */
     text-decoration: none;
     /* this code removes the underline */
@@ -66,6 +72,8 @@ main img {
     /* this helps me round corners on the main image */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     /* this adds a soft shadow */
+    padding: 0;
+    border: none;
 }
 
 aside {
