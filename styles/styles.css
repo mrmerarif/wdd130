@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*thi line helps the page from breaking the layout */
+    /*This code * prevents any layout issues */
 }
 
 body {
     background-color: #FAF3E1;
-    /* this code will apply the page background color */
+    /* This code will apply the page background color */
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     color: #213C51;
@@ -16,63 +16,62 @@ body {
 
 header {
     background-color: #FAF3E1;
-    /* this color is the same color applied that I applied to the full page for smooth blend */
+    /* This color matches the body background for a smooth blend */
     padding: 10px;
     text-align: left;
-    /* This code will help keep the navigation bar text staying in the left */
+    /* This code keeps the navigation bar text staying in the left */
     border-bottom: 2px solid #213C51;
-    /* this code helps me divide the header from the main page with a line */
+    /* This creates a dividing line under the header from the main page*/
     color: #213C51;
 }
 
 nav {
-    background-color: #FAF3E1;
+    background-color: #FAF3E1; 
     padding: 10px;
 
 }
 
 nav a {
-    color: #213C51;
-    /* this again is the color for the text on the navigation bar to blend with my page*/
+    color: #213C51; /* This code matches the mani text.*/
     padding: 10px;
     display: block;
-    /* This codes helps keeping the links on one line */
+    /* This codes keeps each links on its own line */
     text-decoration: none;
-    /* this code removes the underline */
+    /* This removes the underline */
 }
 
 main {
     max-width: 840px;
-    /* this code keeps the limits width of main content */
+    /* This limits the width of the main content */
     margin: 20px auto;
-    /* this code centers the main content on the page */
+    /* This centers the main content on the page */
     padding: 0 20px;
-    /* side padding only for nicer text edges */
+    /* Adds side padding for nicer text edges */
     /* I will need to add a background-color here if want to see the box again */
 }
 
 h1 {
     color: #213C51;
-    /* this is the color for the text on the heading */
+    /* This is the color for the text on the heading */
     text-align: left;
     margin-bottom: 15px;
-    /* this code will set the space under the heading */
+    /* This code will set the space under the heading */
 }
 
 main img {
     float: right;
     width: 150px;
-    /* this helps set the profile image width */
+    /* This sets the profile image width */
     height: auto;
-    /* by setting it to auto that helps to keep the proportions */
+    /* keeps all the proportions correct */
     display: block;
-    /* and this will put the main image on its own line */
+    /* Places the main image on its own line */
     margin: 0 0 1rem 1rem;
-    /* this helps me keep the image to the left */
+    /* This keeps the image to the left */
     border-radius: 10px;
-    /* this helps me round corners on the main image */
+    /* This will make a round corners on the main image */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    /* this adds a soft shadow */
+    /* Adds a soft shadow */
     padding: 0;
     border: none;
     
@@ -86,20 +85,20 @@ p {
 
 aside {
     width: 20em;
-    /* This will help set the size of aside box */
+    /* This set the width of aside box */
     margin: 1em auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     /* This adds a soft border */
     padding: 1em;
-    /* This is the space inside my aside box */
+    /* This is the space inside the aside box */
     background-color: #E8F4FA;
-    /* This color code is the background only for the aside */
+    /* Background color for the aside */
     color: #213C51;
     text-align: center;
     border-radius: 12px;
-    /* This code helps again to round the corners on the aside box */
+    /* This will make a round corners on the aside */
     float: left;
-    /* The float helps me move the aside to the left */
+    /* Moves the aside to the left */
     position: relative;
 }
 
@@ -116,9 +115,9 @@ aside h2 {
 
 aside img {
     width: 200px;
-    /* This is the requirement fo the size of aside image */
+    /* sets the width for required size of aside image */
     height: auto;
-    /* This keeps the proportions on the page */
+    /* This keeps the proportions correct on the page */
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     /* This helps add a soft shadow on the sides */
@@ -130,22 +129,22 @@ aside img {
 p {
     padding: 0;
     margin-bottom: 10px;
-    /* This helps me to add a small space between paragraphs */
+    /* This adds a small space between paragraphs */
 }
 
 footer {
     clear: both;
     margin-top: 1em;
-    /* This helps with the space that is above the footer */
+    /* Adds space above the footer */
     text-align: center;
     background-color: #FAF3E1;
-    /* This is again the same color as body background to blend the footer */
+    /* body background to blend the footer */
     color: #213C51;
     padding: 10px;
-    /* This is the space inside footer */
+    /* Space inside footer */
     font-size: .9rem;
     border-top: 2px solid #213C51;
-    /* This helps me to see the top border of the footer for separation */
+    /* Creates the top border for separation */
     
 }
 
@@ -155,13 +154,13 @@ footer {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 15%);
-    background-color: #BFB39B; /* warm beige that matches your body background */
-    color: #213C51; /* your main text color */
+    background-color: #BFB39B; /* warm color that matches the page background */
+    color: #213C51; /* Main text color */
     border-radius: 10px;
 }
 
 .box:hover {
-  background-color: #F5D892;
+  background-color: #F5D892; /* This will change the color of the box when hovering over */
 }
 
 
@@ -170,7 +169,7 @@ ul.box {
     padding-left: 2rem;
 }
 ul.box a {
-    color: #213C51; /* this is my main text color for my site */
+    color: #213C51; /* Main text color */
     text-decoration: none;
     
 }
