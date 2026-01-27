@@ -60,13 +60,14 @@ h1 {
 }
 
 main img {
+    float: right;
     width: 150px;
     /* this helps set the profile image width */
     height: auto;
     /* by setting it to auto that helps to keep the proportions */
     display: block;
     /* and this will put the main image on its own line */
-    margin: 0 0 15px 0;
+    margin: 0 0 1rem 1rem;
     /* this helps me keep the image to the left */
     border-radius: 10px;
     /* this helps me round corners on the main image */
@@ -74,6 +75,13 @@ main img {
     /* this adds a soft shadow */
     padding: 0;
     border: none;
+    
+}
+
+p {
+    margin: auto;
+    margin-bottom: 10px;
+
 }
 
 aside {
@@ -92,6 +100,18 @@ aside {
     /* This code helps again to round the corners on the aside box */
     float: left;
     /* The float helps me move the aside to the left */
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.1rem 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #213C51;
 }
 
 aside img {
@@ -103,12 +123,14 @@ aside img {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     /* This helps add a soft shadow on the sides */
     margin-bottom: 10px;
+    margin-top: 15px;
+
 }
 
 p {
     padding: 0;
     margin-bottom: 10px;
-    /* This helps to add a small space between paragraphs */
+    /* This helps me to add a small space between paragraphs */
 }
 
 footer {
@@ -124,5 +146,39 @@ footer {
     font-size: .9rem;
     border-top: 2px solid #213C51;
     /* This helps me to see the top border of the footer for separation */
-
+    
 }
+
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 15%);
+    background-color: #BFB39B; /* warm beige that matches your body background */
+    color: #213C51; /* your main text color */
+    border-radius: 10px;
+}
+
+.box:hover {
+  background-color: #F5D892;
+}
+
+
+ul.box {
+    clear: both;
+    padding-left: 2rem;
+}
+ul.box a {
+    color: #213C51; /* this is my main text color for my site */
+    text-decoration: none;
+    
+}
+
+ul.box a:hover {
+    text-decoration: underline;
+}
+
+
+
+
