@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    /*This code * prevents any layout issues */
+}
+
+:root { 
+    --primary-color: #DC0000; /* main text color */ 
+    --background-color: #FAF3E1; /* my main page background */ 
+    --nav-color: #002455; 
+    --border-color: #213C51; 
+    --heading-font: "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    background-color: var(--background-color);
+    /* This code will apply the page background color */
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--primary-color);
+    /* This will help set the main text color*/
+}
+
+ header, main, footer{
+    width: 950px;
+    margin: 0 auto;
+ }
+
+header {
+    background-color: var(--background-color);
+    /* This color matches the body background for a smooth blend */
+    padding: 10px;
+    border-bottom: 2px solid var(--border-color);
+    /* This creates a dividing line under the header from the main page*/
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--nav-color); 
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+nav a {
+    color: var(--primary-color); /* This code matches the main text.*/
+    padding: 0 1px;
+    display: block;
+    /* This codes keeps each links on its own line */
+    text-decoration: none;
+    /* This removes the underline */
+    
+    
+}
+nav a:hover {
+    background-color: var(--background-color); /* This will change the color of the box when hovering over */
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 1px;
+}
+
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    /* This code will set the space under the heading */
+}
+section h2 {
+    color: #0A53B0;
+    font-weight: bold;
+}
+
+
+main {
+    max-width: 840px;
+    /* This limits the width of the main content */
+    margin: 20px auto;
+    /* This centers the main content on the page */
+    padding: 0 20px;
+    /* Adds side padding for nicer text edges */
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    /* This sets the profile image width */
+    height: auto;
+    /* keeps all the proportions correct */
+    display: block;
+    /* Places the main image on its own line */
+    margin: 0;
+    /* This keeps the image to the left */
+    border-radius: 10px;
+    /* This will make a round corners on the main image */
+    padding: 0;
+    border: none;
+}
+
+.hero article img {
+    float: left;
+    width: 125px;
+    margin-right: 15px;  /* this makes a space between the img and the text*/
+    border-radius: 6px;
+    }
+
+
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    padding: 5px; /*This helps my transparent line to go smaller and up */
+    text-align: center;
+    background-color: rgba(0, 36, 85, 0.7); 
+    font-family: var(--heading-font);
+    
+}
+/*this code below helps me fix the position of my hero picture and article*/
+.hero article {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    background-color: rgba(218, 243, 242, 0.60); /* 0.65 will give me the transparency */
+    padding: 1px 0px;
+    width: 95%;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    
+}
+
+.hero article p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: blue;
+  font-weight: bold;
+  margin-top: 18px; /*This helped me move the tex down and centered */
+}
+
+
+section {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 36, 85, 0.1); /* This makes it transparent navy */
+  border: 1px solid var(--nav-color);
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--primary-color);
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
+
+ footer {
+    clear: both;
+    margin-top: 1em;
+    /* Adds space above the footer */
+    text-align: center;
+    background-color: var(--background-color);
+    /* body background to blend the footer */
+    color: #0A53B0;
+    padding: 10px;
+    /* Space inside footer */
+    font-size: 1rem;
+    border-top: 2px solid var(--border-color);
+    /* Creates the top border for separation */
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    background-color: rgba(0, 36, 85, 0.2);
+}
+
+.socialmedia a {
+    text-decoration: none;
+
+
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
