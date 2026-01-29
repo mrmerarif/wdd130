@@ -69,7 +69,6 @@ nav li {
     padding: 1px;
 }
 
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -80,7 +79,6 @@ section h2 {
     color: #0A53B0;
     font-weight: bold;
 }
-
 
 main {
     max-width: 840px;
