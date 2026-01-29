@@ -107,7 +107,7 @@ main {
 }
 
 .hero article img {
-    float: left;
+    float: right;
     width: 125px;
     margin-right: 15px;  /* this makes a space between the img and the text*/
     border-radius: 6px;
