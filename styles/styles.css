@@ -28,21 +28,30 @@ header {
 nav {
     background-color: #FAF3E1; 
     padding: 10px;
-
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: #213C51; /* This code matches the mani text.*/
-    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #213C51; /* This code matches the main text.*/
+    padding: 0.5rem;
     display: block;
     /* This codes keeps each links on its own line */
     text-decoration: none;
     /* This removes the underline */
 }
 
+nav a:hover {
+    background-color: #F5D892; 
+    color: #213C51; 
+    border-radius: 6px; /* this makes smooth corners */ 
+}
+
+
 main {
-    max-width: 840px;
-    /* This limits the width of the main content */
     margin: 20px auto;
     /* This centers the main content on the page */
     padding: 0 20px;
@@ -52,10 +61,12 @@ main {
 
 h1 {
     color: #213C51;
-    /* This is the color for the text on the heading */
     text-align: left;
     margin-bottom: 15px;
     /* This code will set the space under the heading */
+    border-bottom: 2px solid #213C51; 
+    padding-bottom: 5px;
+    
 }
 
 main img {
@@ -86,19 +97,17 @@ p {
 aside {
     width: 20em;
     /* This set the width of aside box */
-    margin: 1em auto;
+    margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
     /* This adds a soft border */
     padding: 1em;
     /* This is the space inside the aside box */
     background-color: #E8F4FA;
     /* Background color for the aside */
-    color: #213C51;
+    color: #213C51;  /*text color*/
     text-align: center;
     border-radius: 12px;
     /* This will make a round corners on the aside */
-    float: left;
-    /* Moves the aside to the left */
     position: relative;
 }
 
@@ -133,20 +142,37 @@ p {
 }
 
 footer {
-    clear: both;
     margin-top: 1em;
     /* Adds space above the footer */
-    text-align: center;
+    text-decoration: none;
     background-color: #FAF3E1;
     /* body background to blend the footer */
     color: #213C51;
-    padding: 10px;
+    padding: 0.5rem 0.9rem;
     /* Space inside footer */
-    font-size: .9rem;
+    font-size: 1.1rem;
     border-top: 2px solid #213C51;
     /* Creates the top border for separation */
-    
+    text-align: center;
+   
 }
+
+footer a {
+    color: red;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.6rem;
+    display: inline-block;
+    margin: 0 0.3rem;
+}
+
+footer a:hover {
+    background-color: #F5D892;
+    color: #213C51;
+    border-radius: 6px;
+    padding: 0.2rem 0.4rem; /* This make the hovering when it is highlight look better*/
+}
+
 
 
 /* Class Selectors */
@@ -176,6 +202,17 @@ ul.box a {
 
 ul.box a:hover {
     text-decoration: underline;
+}
+
+header, footer, .grid {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* this moves the main to the left, and the aside on right */
+    gap: 20px;
 }
 
 
