@@ -5,8 +5,9 @@ body {
 
 nav {
     background-color: #36454f;
-    justify-content: space-between;
-    display: flexbox;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
