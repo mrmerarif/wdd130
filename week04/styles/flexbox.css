@@ -8,7 +8,16 @@ body {
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+
 }
+
+
 
 .flex-item {
     width: 250px;
@@ -17,6 +26,8 @@ body {
     padding: 0.5rem;
     background-color: #bbb;
     color: #333;
+    display: flex;
+
 }
 
 .item1 {
@@ -30,3 +41,4 @@ body {
 .item3 {
     min-height: 300px;
 }
+

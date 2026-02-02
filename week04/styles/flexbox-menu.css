@@ -5,6 +5,8 @@ body {
 
 nav {
     background-color: #36454f;
+    justify-content: space-between;
+    display: flexbox;
 }
 
 nav ul {
