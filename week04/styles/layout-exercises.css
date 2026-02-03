@@ -57,3 +57,54 @@ div {
     margin: .25rem;
     background-color: #abd;
 }
+
+/* this two codes center the paragraph content both horizontally and vertically with each div using CSS Flex or CSS Grid. in this case I use the flex */
+.flex {
+  background-color: #aba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  background-color: #abb;
+  display: grid;
+  place-items: center;
+}
+
+
+
+/* The 2 codes below create a single row of div items within the container div, if the screen is wide enough. Otherwise design the divs to stack within the given width space. we also have to make sure that when setting the code there is equal space between items and the sides. */
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.two {
+  min-width: 150px;
+  text-align: center;
+  border: 1px solid #333;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+
+/* The 3 codes belows allows me to create a table using grid where the first row spans the three columns.*/
+.container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.columns-3 {
+  grid-column: 1 / 4; /* spans all 3 columns */
+}
+
+.three {
+  border: 1px solid #333;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+
