@@ -6,7 +6,7 @@
 }
 
 :root { 
-    --primary-color: #DC0000; /* main text color */ 
+    --primary-color: #0A53B0; /* main text color */ 
     --background-color: #FAF3E1; /* my main page background */ 
     --nav-color: #002455; 
     --border-color: #213C51; 
@@ -31,7 +31,7 @@ body {
 header {
     background-color: var(--background-color);
     /* This color matches the body background for a smooth blend */
-    padding: 2px;
+    padding: 10px 20px;
     border-bottom: 2px solid var(--border-color);
     /* This creates a dividing line under the header from the main page*/
     display: grid;
@@ -43,14 +43,13 @@ header {
 header img{
     max-width: 120px;
     height: auto;
-    
+    margin-left: 60px;
 }
 
 nav {
-    background-color: var(--nav-color); 
-    padding: 4px 50px;
-    border-radius: 6px;
-    
+    background-color: transparent; 
+    padding: 0;
+      
 }
 
 .navigation {
@@ -63,16 +62,22 @@ nav {
 }
 
 nav a {
-    color: var(--primary-color); /* This code matches the main text.*/
-    padding: 0.5rem 1rem;
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    /* This code matches the main text.*/
+    color: var(--nav-color);
+    padding: 8px 16px;
     text-decoration: none;
     /* This removes the underline */
     display: block;
     /* This codes keeps each links on its own line */
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: var(--background-color); /* This will change the color of the box when hovering over */
+    background-color: var(--nav-color); /* This will change the color of the box when hovering over */
+    color: white;
 }
 
 
@@ -120,13 +125,14 @@ main {
     text-align: center;
     background-color: rgba(0, 36, 85, 0.7); 
     font-family: var(--heading-font);
+    color: white;
 }
 
 .hero article {
     position: absolute;
     bottom: 10px;
     left: 16px;
-    background-color: rgba(218, 243, 242, 0.70); /* 0.70 will give me the transparency */
+    background-color: rgba(218, 243, 242, 0.85); /* 0.70 will give me the transparency */
     padding: 10px 15px; /* this moves the text away from the edge and centers it */
     width: 95%;
     border-radius: 6px;
@@ -143,7 +149,7 @@ main {
 .hero article p {
   font-size: 0.9rem;
   line-height: 1.5;
-  color: blue;
+  color: #0A53B0;
   font-weight: bold;
   margin-top: 18px; /*This helped me move the tex down and centered */
 }
@@ -153,7 +159,7 @@ section {
   width: 100%;
   text-align: center;
   /*background-color: rgba(0, 36, 85, 0.1); /* This makes it transparent navy */
-  border: 1px solid var(--nav-color);
+  /*border: 1px solid var(--nav-color);*/ 
   padding: 1rem;
   border-radius: 8px;
   margin: 2rem 0;
@@ -226,7 +232,7 @@ footer p{
     align-items: center;
     gap: 20px;
     /*margin-top: 10px;*/
-    background-color: #5f85ba;
+    background-color: var(--background-color);
     padding: 5px 20px 5px 20px;
 }
 
