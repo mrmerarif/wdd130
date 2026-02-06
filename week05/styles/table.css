@@ -1,0 +1,43 @@
+                                     
+table {
+   border-collapse: collapse;
+   border: 2px solid rgb(140 140 140);
+   letter-spacing: 1px;
+   font-family: sans-serif;
+   font-size: 0.8rem;
+   border-radius: 8px;
+   margin: 2rem;
+   width: 50%;
+}
+
+td, th {
+    border: 1px solid rgb(150 150 150);
+    padding: 8px 10px;
+    text-align: center;
+}
+
+thead th, 
+tfoot tr {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    font-weight: bold;
+    
+
+}
+
+thead th:hover,
+tfoot td:hover,
+tfoot th:hover,
+td:hover, th:hover
+{
+   background-color: #A7D8D8;
+color: #003321;
+
+
+
+
+
+}
+
+
