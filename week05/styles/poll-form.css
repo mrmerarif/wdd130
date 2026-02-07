@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*This code * prevents any layout issues */
+}
+
+
+
+body {
+    background-color: #FAF3E1;
+    font-size: 1.2rem;
+    /* This code will apply the page background color */
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #213C51;
+    /* This will help set the main text color*/
+    
+}
+
+h1 {
+    color: #213C51;
+    text-align: center;
+    margin-bottom: 15px;
+    /* This code will set the space under the heading */
+    border-bottom: 2px solid #213C51; 
+    padding-bottom: 5px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 6px;
+    background-color: #dac19d;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1rem;
+    padding: 1rem 1.25rem; 
+    border: 1px solid rgb(0 0 0 / 0.2);
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+
+legend {
+    padding: 0 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+label, input, button, select, textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+
+}
+
+button {
+    margin: 1.5rem auto;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0A53B0;
+    color: #FAF3E1;
+    border-radius: 6px;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.75rem 0;
+
+}
+
+
+
+
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+
+
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    margin-top: 1em;
+    /* Adds space above the footer */
+    text-decoration: none;
+    background-color: #FAF3E1;
+    /* body background to blend the footer */
+    color: #213C51;
+    padding: 0.5rem 0.9rem;
+    /* Space inside footer */
+    font-size: 0.8em;
+    border-top: 1px solid #213C51;
+    /* Creates the top border for separation */
+    text-align: center;
+   
+}
