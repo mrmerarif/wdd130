@@ -253,112 +253,156 @@ footer p{
 
     /*This is the code that gives style to the contact us page*/
     /* Contact Page Layout */
-.contact-grid {
-    max-width: 1100px;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
+ 
+ body.contact-page main {
+     max-width: 1100px;
+     margin-top: 0;
+ }
+ 
+  
+ body.contact-page main h1 {
+     margin: 0;
+     text-align: center;
+     color: var(--primary-color);
+ }
+ 
+ body.contact-page main > p {
+     margin: 0.25rem 0;
+     text-align: center;
+     font-size: 1.1rem;
+     color: var(--primary-color);
+ }
+ 
+ /*This helps fix the grid: for the map to the left, and the form to the right*/
+ body.contact-page 
+ .contact-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 2rem;
+     align-items: stretch;
+     margin-top: 2rem;
+ }
+ 
+ /*This helps so the border background does not show and blends */
+ body.contact-page .contact-info,
+ body.contact-page .contact-form {
+     background: transparent;
+     border: none;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     color: var(--primary-color);
+ }
+ 
+ /*This makes the map to fit inside the box eliminating my spaces */
+ body.contact-page 
+ .contact-info iframe {
+     width: 100%;
+     flex-grow: 1;
+     min-height: 350px;
+     border: none;
+ }
+ 
+ /*Lay out display for my form */
+ body.contact-page 
+ .contact-form form {
+     display: grid;
+     gap: 1.5rem;
+ }
+ 
+ /*This puts the label left and the input right */
+ body.contact-page 
+ .form-item {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     align-items: center;
+     gap: 1rem;
+ }
+ 
+ /* This will control my text area */
+ body.contact-page .contact-form input[type="text"],
+ body.contact-page .contact-form input[type="email"],
+ body.contact-page .contact-form textarea {
+     width: 100%;
+     padding: .5rem;
+     border: 1px solid rgb(0 0 0 / 0.2);
+     border-radius: 4px;
+     font-size: 1rem;
+     color: var(--primary-color);
+ }
+ 
+ 
+ body.contact-page 
+ .message-row {
+     grid-template-columns: 1fr;
+ }
+ 
+ body.contact-page 
+ .message-row label {
+     margin-bottom: .3rem;
+ }
+ 
+ /* This is for my radio selection*/
+ body.contact-page 
+ .purpose-row label-first-child {
+     align-items: center;
+     
+ }
+ 
+ body.contact-page 
+ .purpose-options {
+     display: flex;
+     flex-direction: column;
+     gap: .25rem;
+     padding-left: 0.5rem;
+ }
 
+ 
+ body.contact-page
+  .radio-line {
+     display: flex;
+     align-items: center;
+     gap: .5rem;
+     font-size: 1rem;
+     color: var(--primary-color);
+ }
+ 
+ /*This help with the full width of the grid*/
+ body.contact-page 
+ .subscribe-row {
+     grid-template-columns: 1fr;
+ }
+ 
+ body.contact-page 
+ .subscribe-label {
+     display: flex;
+     align-items: center;
+     gap: .5rem;
+     font-size: 1rem;
+     color: var(--primary-color);
+ }
+ 
 
-.contact-info iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    margin-top: 1rem;
-}
-
-
-/* Contact Info Box this is for my map should be on the left side */
-.contact-info {
-    background-color: #dac19d; /* poll form background color */
-    padding: 1.5rem;
-    border-radius: 6px;
-    border: 1px solid rgb(0 0 0 / 0.1);
-}
-
-.contact-info iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    margin-top: 1rem;
-}
-
-/* Contact Form Box */
-.contact-form {
-    background-color: #dac19d; /* background color */
-    padding: 1.5rem;
-    border-radius: 6px;
-    border: 1px solid rgb(0 0 0 / 0.1);
-}
-
-.contact-form form {
-    display: grid;
-    gap: 1.5rem;
-}
-
-/* Labels + Inputs */
-.contact-form label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: .3rem;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: .5rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-/* Radio Buttons */
-.contact-form input[type="radio"] {
-    width: 1.1rem;
-    height: 1.1rem;
-    margin-right: .5rem;
-}
-
-.contact-form fieldset label {
+ body.contact-page .contact-form button {
+     background-color: navy;
+     color: #fff;
+     padding: .75rem;
+     font-size: 1.1rem;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     width: 100%;
+ }
+ 
+ body.contact-page 
+ .contact-form button:hover {
+     background-color: #0A53B0;
+ }
+ 
+ body.contact-page .employees {
     display: flex;
-    align-items: center;
-    gap: .5rem;
-    margin-bottom: .5rem;
-}
-
-/* My submit Button */
-.contact-form button {
-    background-color: navy;
-    color: #fff;
-    padding: .75rem;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.contact-form button:hover {
-    background-color: #0A53B0;
-}
-
-/* this covers the structure for my employee Section */
-.employees {
-    max-width: 1100px;
-    margin: 3rem auto;
-    text-align: center;
-}
-
-.employees figure {
-    display: inline-block;
-    margin: 1rem;
-}
-
-.employees img {
-    width: 200px;
-    border-radius: 6px;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
