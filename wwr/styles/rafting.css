@@ -251,6 +251,114 @@ footer p{
     margin-top: 10px;
     }
 
+    /*This is the code that gives style to the contact us page*/
+    /* Contact Page Layout */
+.contact-grid {
+    max-width: 1100px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
 
 
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 1rem;
+}
 
+
+/* Contact Info Box this is for my map should be on the left side */
+.contact-info {
+    background-color: #dac19d; /* poll form background color */
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 1rem;
+}
+
+/* Contact Form Box */
+.contact-form {
+    background-color: #dac19d; /* background color */
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Labels + Inputs */
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: .3rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Radio Buttons */
+.contact-form input[type="radio"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: .5rem;
+}
+
+.contact-form fieldset label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+/* My submit Button */
+.contact-form button {
+    background-color: navy;
+    color: #fff;
+    padding: .75rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #0A53B0;
+}
+
+/* this covers the structure for my employee Section */
+.employees {
+    max-width: 1100px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.employees figure {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.employees img {
+    width: 200px;
+    border-radius: 6px;
+}
