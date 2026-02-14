@@ -321,6 +321,15 @@ footer p{
      gap: 1rem;
  }
  
+ body.contact-page
+ .form-item > label {
+    justify-self: start;
+    text-align: left;
+}
+
+
+
+
  /* This will control my text area */
  body.contact-page .contact-form input[type="text"],
  body.contact-page .contact-form input[type="email"],
