@@ -280,12 +280,14 @@ footer p{
      grid-template-columns: 1fr 1fr;
      gap: 2rem;
      align-items: stretch;
-     margin-top: 2rem;
+     margin-top: 0.5rem;
  }
  
  /*This helps so the border background does not show and blends */
- body.contact-page .contact-info,
- body.contact-page .contact-form {
+ body.contact-page 
+ .contact-info,
+ body.contact-page
+ .contact-form {
      background: transparent;
      border: none;
      padding: 0;
@@ -307,7 +309,7 @@ footer p{
  body.contact-page 
  .contact-form form {
      display: grid;
-     gap: 1.5rem;
+     gap: 1.25rem;
  }
  
  /*This puts the label left and the input right */
@@ -334,30 +336,39 @@ footer p{
  
  body.contact-page 
  .message-row {
-     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    grid-template-columns: 1fr;
+    align-items: start;
  }
  
  body.contact-page 
  .message-row label {
-     margin-bottom: .3rem;
+     margin-bottom: 0;
+     align-self: start;
  }
  
  /* This is for my radio selection*/
  body.contact-page 
- .purpose-row label-first-child {
-     align-items: center;
-     
- }
+ .purpose-row > 
+ label:first-child {
+    align-self: center;
+}
+body.contact-page 
+.purpose-row { 
+    align-items: start;
+}
  
  body.contact-page 
  .purpose-options {
      display: flex;
      flex-direction: column;
      gap: .25rem;
-     padding-left: 0.5rem;
+     padding-left: .5rem;
  }
 
- 
  body.contact-page
   .radio-line {
      display: flex;
@@ -382,8 +393,7 @@ footer p{
      color: var(--primary-color);
  }
  
-
- body.contact-page .contact-form button {
+body.contact-page .contact-form button {
      background-color: navy;
      color: #fff;
      padding: .75rem;
@@ -405,4 +415,31 @@ footer p{
     gap: 2rem;
     flex-wrap: wrap;
     margin-top: 2rem;
+    text-align: center;
 }
+
+body.contact-page
+.employees h2 {
+     text-align: center; 
+     margin-bottom: 1rem; }
+
+body.contact-page .employees img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+body.contact-page
+ .employee-cards { 
+    display: flex; 
+    justify-content: center; 
+    gap: 2rem; flex-wrap: wrap;
+} 
+    
+body.contact-page
+.employee-cards img { 
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 6px; }
