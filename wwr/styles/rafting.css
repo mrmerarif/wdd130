@@ -350,7 +350,6 @@ footer p{
     align-items: flex-start;
     gap: 0;
     grid-template-columns: 1fr;
-    align-items: start;
  }
  
  body.contact-page 
