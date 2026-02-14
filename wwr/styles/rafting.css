@@ -251,15 +251,14 @@ footer p{
     margin-top: 10px;
     }
 
-    /*This is the code that gives style to the contact us page*/
-    /* Contact Page Layout */
+/*This is the code that gives style to the contact us page*/
+/* Contact Page Layout from 255 to 453*/
  
  body.contact-page main {
      max-width: 1100px;
      margin-top: 0;
  }
- 
-  
+   
  body.contact-page main h1 {
      margin: 0;
      text-align: center;
@@ -327,9 +326,6 @@ footer p{
     text-align: left;
 }
 
-
-
-
  /* This will control my text area */
  body.contact-page .contact-form input[type="text"],
  body.contact-page .contact-form input[type="email"],
@@ -341,8 +337,7 @@ footer p{
      font-size: 1rem;
      color: var(--primary-color);
  }
- 
- 
+  
  body.contact-page 
  .message-row {
     display: flex;
@@ -451,3 +446,148 @@ body.contact-page
     height: 250px; 
     object-fit: cover; 
     border-radius: 6px; }
+
+ /* End of Contact Page Layout code from 255 to 450*/
+
+ 
+ /* Home Page style code form 453 to 591*/ 
+body.home-page main { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+/* Hero section */ 
+body.home-page .hero {
+     position: relative;
+ }
+
+ body.home-page 
+ .hero img {
+    width: 100%; 
+    height: 450; 
+    display: block;
+    object-fit: cover;
+ }
+
+ body.home-page
+ .hero h1 { 
+    position: absolute; /*relative moves the h1 to the bottom.*/
+    top: 9%; left: 50%; /*10% moves the h1 to the top,and 50% move it  right in between the hero image.*/
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 36, 85, 0.6); 
+    color: white; 
+    padding: 0rem 1.5rem; /*This makes it narrow*/
+    border-radius: 6px; 
+    text-align: center; 
+    font-size: 2rem; /*Combination of the absolute position this has to be modify*/
+    max-width: 96%; /*This adjust how fat the h1 fits inside the hero img*/
+       
+}
+
+/* CTA section */ 
+body.home-page 
+.cta-section {
+    text-align: center;
+    margin: 2rem 0;
+    background-color: rgba(0, 36, 85, 0.05); /*** adds the background but it does not blend well. I might have to change it***/
+    padding: 1.5rem; 
+    border-radius: 8px; 
+    margin: 2rem 0;
+}
+
+body.home-page 
+.cta-button { 
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+body.home-page 
+.cta-button:hover { 
+    background-color: #0A53B0; 
+}
+
+/* Newsletter section */ 
+body.home-page 
+.newsletter {
+     background-color: rgba(0, 36, 85, 0.05);
+     padding: 1.5rem;
+     border-radius: 8px;
+     margin: 2rem 0;
+}
+
+body.home-page 
+.newsletter-form { 
+    display: grid;
+    gap: 1rem;
+    max-width: 500px; 
+    margin: 0 auto;
+}
+
+body.home-page 
+.newsletter-item { 
+    display: grid; 
+    gap: .25rem;
+}
+
+body.home-page 
+.newsletter-form input { 
+    padding: .5rem; /*This makes the input section a little bit bigger and structure.*/
+    border: 1px solid rgb(0 0 0 / .2);
+    border-radius: 4px;
+}
+
+body.home-page 
+.newsletter-form button {
+    background-color: navy;
+    color: white;
+    padding: .75rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+body.home-page 
+.newsletter-form 
+button:hover { 
+    background-color: #0A53B0; }
+
+/* Home grid section */ 
+body.home-page .home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}  
+
+body.home-page 
+.home-grid img {
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+body.home-page 
+.grid-item h3 {
+    margin-top: .5rem;
+    color: var(--primary-color);
+}
+
+body.home-page 
+.grid-item p {
+    margin-top: .25rem;
+    color: var(--primary-color);
+
+}
+
+/*End of the code for the home pate from 253 to 591*/
+
+/*Trips page css code from 593 to */
