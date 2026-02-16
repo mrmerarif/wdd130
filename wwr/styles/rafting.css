@@ -103,8 +103,6 @@ main {
     position: relative;
 }
 
-
-
 /*this code below helps me fix the position of my hero picture and article*/
 .hero img {
     width: 100%;
@@ -153,7 +151,6 @@ main {
   font-weight: bold;
   margin-top: 18px; /*This helped me move the tex down and centered */
 }
-
 
 section {
   width: 100%;
@@ -216,7 +213,6 @@ footer {
     font-size: 1rem;
     border-top: 2px solid var(--border-color);
     /* Creates the top border for separation */
-
 }
 
 footer p{
@@ -447,10 +443,10 @@ body.contact-page
     object-fit: cover; 
     border-radius: 6px; }
 
- /* End of Contact Page Layout code from 255 to 450*/
+ /* End of Contact Page Layout code from 255 to 446*/
 
  
- /* Home Page style code form 453 to 591*/ 
+ /* Home Page style code form 449 to 587*/ 
 body.home-page main { 
     max-width: 1100px; 
     margin: 0 auto; 
@@ -465,7 +461,7 @@ body.home-page .hero {
  body.home-page 
  .hero img {
     width: 100%; 
-    height: 450; 
+    height: 450px; 
     display: block;
     object-fit: cover;
  }
@@ -587,7 +583,94 @@ body.home-page
     color: var(--primary-color);
 
 }
+/*End of the code for the home pate from 249 to 586*/
 
-/*End of the code for the home pate from 253 to 591*/
 
-/*Trips page css code from 593 to */
+/*Trips page styles css code from 589 to */
+body.trips-page main { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+/* CTA section */ 
+body.trips-page .trips-cta {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+body.trips-page 
+.trips-cta .cta-button {
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+body.trips-page 
+.trips-cta 
+.cta-button:hover { 
+    background-color: #0A53B0;
+ }
+
+ /* Trip cards code that makes the (3-column layout) for trip page*/ 
+ body.trips-page 
+ .trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*This makes the 3 columns 1 row*/
+    gap: 2rem; /*this makes the space in between them */
+    margin: 2rem 0;
+ }
+
+ body.trips-page 
+ .trip-card img { 
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: .5rem;
+}
+
+body.trips-page 
+.trip-card h2 {
+    margin-top: .5rem;
+    color: var(--primary-color);
+}
+
+body.trips-page 
+.trip-card p {
+    margin-top: .25rem;
+    color: var(--primary-color);
+
+}
+
+/* Trips table format */ 
+body.trips-page 
+.trips-table { 
+    margin: 3rem 0;
+}
+
+body.trips-page table { 
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border-radius: 6px; 
+    overflow: hidden;
+}
+
+body.trips-page table th, 
+body.trips-page table td {
+    border: 1px solid rgb(0 0 0 / .2); /*makes all the lines around the text of the table */
+    padding: .75rem; /*This makes them wide and even*/
+    text-align: left;
+}
+
+body.trips-page table th { 
+    background-color: rgba(0, 36, 85, 0.1);
+    font-weight: bold; 
+}
+
